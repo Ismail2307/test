@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Wall</title>
+    <style>
+        .card img{
+        max-width:300px;
+        max-height:300px;
+        }
+
+        body{
+        background-color:black;
+        color:white;
+        }
+
+        .card{
+        background-color:gray;
+        width:350px;
+        height:350px;
+        margin-bottom:20px;
+        justify-content:center;
+        align-items:center;
+        display:flex;
+        flex-direction:column;
+        border-radius:15px;
+        padding:15px;
+        }
+    </style>
+</head>
+<body>
+<h1>The Wall</h1>
+<a href="{% url 'add_image' %}">Add Image</a>
+<div class="cont">
+    {% for image in images %}
+    <div class="card">
+    <img src="{{ image.image.url }}" alt="Image">
+    <h3>{{image.text}}</h3>
+        </div>
+    {% endfor %}
+</div>
+</body>
+</html>
