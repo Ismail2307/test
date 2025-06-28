@@ -26,4 +26,4 @@ jobs:
 
       - name : Run Tests
         run: |
-          echo "Testing..."
+          python manage.py test
