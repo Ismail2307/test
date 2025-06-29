@@ -3,11 +3,8 @@ name: Django CI/CD
 on:
   push:
     branches: [main]
-    paths:
-      - 'DevOps/**'
-      - 'Beggining/**'
     paths-ignore:
-      - 'Beggining/templates/dashboard.html/**'
+      - 'README.md/**'
 
 
 jobs:
