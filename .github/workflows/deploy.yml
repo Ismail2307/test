@@ -6,6 +6,8 @@ on:
     paths:
       - 'DevOps/**'
       - 'Beggining/**'
+    paths-ignore:
+      - 'Beggining/templates/dashboard.html/**'
 
 
 jobs:
