@@ -3,6 +3,9 @@ name: Django CI/CD
 on:
   push:
     branches: [main]
+    paths:
+      - 'DevOps/**'
+      - 'Beggining/**'
 
 
 jobs:
