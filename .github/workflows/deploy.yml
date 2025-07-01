@@ -32,9 +32,9 @@ jobs:
           pip install -r requirements.txt
 
       - name: Set environment variables
-        run : echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" >> $GITHUB_ENV
+        run: echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" >> $GITHUB_ENV
 
-      - name : Run Tests
+      - name: Run Tests
         run: |
           python manage.py test
         
